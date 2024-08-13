@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animals Fun</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-sizing: border-box;
+      }
+
+      .image {
+        width: 200px;
+        height: 180px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease,
+          border-radius 0.3s ease;
+      }
+
+      .image:hover {
+        cursor: url("./Cursor/cur3.gif"), crosshair; /* Test with a fallback to pointer */
+        transform: scale(1.1); /* Slightly increase the size */
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow */
+        border-radius: 50%; /* Make the corners fully rounded */
+      }
+
+      .div1 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(90, 71, 71);
+        margin-bottom: 3px;
+      }
+
+      .div2 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(236, 149, 91);
+        margin-bottom: 3px;
+      }
+
+      .div3 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(184, 183, 183);
+      }
+
+      .div4 {
+        width: 200px;
+        height: 200px;
+        background-color: purple;
+        margin-bottom: 3px;
+      }
+
+      .div5 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(128, 189, 78);
+        margin-bottom: 3px;
+      }
+
+      .div6 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(191, 154, 221);
+      }
+
+      .div7 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(243, 205, 78);
+        margin-bottom: 3px;
+      }
+
+      .div8 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(235, 207, 157);
+        margin-bottom: 3px;
+      }
+
+      .div9 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(219, 171, 213);
+      }
+
+      .c1 {
+        display: inline-block;
+      }
+
+      .main {
+        display: inline-block;
+        margin-top: 100px;
+      }
+
+      .master {
+        width: 100%;
+        text-align: center; /* Centers the .main container */
+        background-color: snow;
+      }
+
+      h1 {
+        margin-top: 50px;
+        text-align: center;
+        background-color: snow;
+        font-family: "Butterfly Kids", cursive;
+        font-size: 80px;
+        color: rgb(53, 51, 51);
+        font-weight: 900;
+      }
+
+      @media (max-width: 640px) {
+        .div1,
+        .div2,
+        .div3,
+        .div4,
+        .div5,
+        .div6,
+        .div7,
+        .div8,
+        .div9 {
+          width: 120px;
+          height: 120px;
+          margin: 30px;
+        }
+        .image {
+          width: 120px;
+          height: 110px;
+        }
+      }
+
+      @media (max-width: 554px) {
+        .div1,
+        .div2,
+        .div3,
+        .div4,
+        .div5,
+        .div6,
+        .div7,
+        .div8,
+        .div9 {
+          width: 100px;
+          height: 100px;
+          margin: 15px;
+        }
+        .image {
+          width: 100px;
+          height: 95px;
+        }
+      }
+
+      @media (max-width: 400px) {
+        .c1 {
+          display: block;
+        }
+        .div1,
+        .div2,
+        .div3,
+        .div4,
+        .div5,
+        .div6,
+        .div7,
+        .div8,
+        .div9 {
+          width: 200px;
+          height: 200px;
+          margin: 15px;
+        }
+
+        .image {
+          width: 200px;
+          height: 190px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Animals Fun</h1>
+    <div class="master">
+      <div class="main">
+        <div class="c1">
+          <div class="div1">
+            <img
+              class="image"
+              src="./Images/1.jpg"
+              alt=""
+              onclick="playSound(1)"
+              onmouseover="playHoverSound('C1')"
+            />
+          </div>
+          <div class="div2">
+            <img
+              class="image"
+              src="./Images/2.jpg"
+              alt=""
+              onclick="playSound(2)"
+              onmouseover="playHoverSound('C2')"
+            />
+          </div>
+          <div class="div3">
+            <img
+              class="image"
+              src="./Images/3.jpg"
+              alt=""
+              onclick="playSound(3)"
+              onmouseover="playHoverSound('C3')"
+            />
+          </div>
+        </div>
+        <div class="c1">
+          <div class="div4">
+            <img
+              class="image"
+              src="./Images/4.jpg"
+              alt=""
+              onclick="playSound(4)"
+              onmouseover="playHoverSound('C4')"
+            />
+          </div>
+          <div class="div5">
+            <img
+              class="image"
+              src="./Images/5.jpg"
+              alt=""
+              onclick="playSound(5)"
+              onmouseover="playHoverSound('C5')"
+            />
+          </div>
+          <div class="div6">
+            <img
+              class="image"
+              src="./Images/6.jpg"
+              alt=""
+              onclick="playSound(6)"
+              onmouseover="playHoverSound('C6')"
+            />
+          </div>
+        </div>
+        <div class="c1">
+          <div class="div7">
+            <img
+              class="image"
+              src="./Images/7.jpg"
+              alt=""
+              onclick="playSound(7)"
+              onmouseover="playHoverSound('C7')"
+            />
+          </div>
+          <div class="div8">
+            <img
+              class="image"
+              src="./Images/8.jpg"
+              alt=""
+              onclick="playSound(8)"
+              onmouseover="playHoverSound('C8')"
+            />
+          </div>
+          <div class="div9">
+            <img
+              class="image"
+              src="./Images/9.jpg"
+              alt=""
+              onclick="playSound(9)"
+              onmouseover="playHoverSound('C1')"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add an audio element -->
+    <audio id="audioPlayer"></audio>
+    <audio id="hoverSoundPlayer"></audio>
+
+    <script>
+      function playSound(soundNumber) {
+        var audio = document.getElementById("audioPlayer");
+        audio.src = "./Sounds/" + soundNumber + ".wav";
+        audio.play();
+      }
+      function playHoverSound(soundName) {
+        var audio = document.getElementById("hoverSoundPlayer");
+        audio.src = "./Click-Sounds/" + soundName + ".wav";
+        audio.play();
+      }
+    </script>
+  </body>
+</html>
